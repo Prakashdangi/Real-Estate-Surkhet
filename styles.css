@@ -1,0 +1,40 @@
+.contact-section {
+    max-width: 800px;
+    margin: 4rem auto;
+    padding: 2.5rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.contact-section h2 {
+    color: var(--accent-blue);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+form {
+    display: grid;
+    gap: 1.5rem;
+}
+
+form input, form textarea {
+    padding: 0.8rem;
+    border: 2px solid var(--brand-blue);
+    border-radius: 6px;
+}
+
+button[type="submit"] {
+    background: var(--accent-blue);
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background: #6CB4EE;
+}
