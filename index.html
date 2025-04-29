@@ -8,7 +8,6 @@
 </head>
 <body>
     <!-- Header -->
-    <!-- Header -->
     <header>
         <div class="nav-container">
             <div class="logo">Real Estate Surkhet</div>
@@ -23,35 +22,36 @@
             </nav>
         </div>
     </header>
-<!-- About Us Section -->
-    <section id="about" class="about-section">
-            <h2>About Us</h2>
-            <div class="about-content">
-                <h3>Introduction</h3>
-                <p>Welcome to Real Estate Surkhet, your trusted partner in buying and selling properties in Surkhet.</p>
-                
-                <h3>Mission</h3>
-                <p>Our mission is to provide a seamless and transparent real estate experience for our clients.</p>
-                
-                <h3>Vision</h3>
-                <p>To be the leading real estate marketplace in Surkhet, known for our integrity and customer satisfaction.</p>
-                
-                <h3>Services</h3>
-                <ul>
-                    <li>Property Listings</li>
-                    <li>Market Analysis</li>
-                    <li>Consultation Services</li>
-                    <li>Legal Assistance</li>
-                </ul>
-                
-                <h3>Terms and Conditions</h3>
-                <p>All transactions are subject to our terms and conditions, which ensure a fair and secure process for both buyers and sellers.</p>
-            </div>
-        </section>
     
-        <!-- Property Listings -->
+    <!-- About Us Section -->
+    <section id="about" class="about-section">
+        <h2>About Us</h2>
+        <div class="about-content">
+            <h3>Introduction</h3>
+            <p>Welcome to Real Estate Surkhet, your trusted partner in buying and selling properties in Surkhet.</p>
+            
+            <h3>Mission</h3>
+            <p>Our mission is to provide a seamless and transparent real estate experience for our clients.</p>
+            
+            <h3>Vision</h3>
+            <p>To be the leading real estate marketplace in Surkhet, known for our integrity and customer satisfaction.</p>
+            
+            <h3>Services</h3>
+            <ul>
+                <li>Property Listings</li>
+                <li>Market Analysis</li>
+                <li>Consultation Services</li>
+                <li>Legal Assistance</li>
+            </ul>
+            
+            <h3>Terms and Conditions</h3>
+            <p>All transactions are subject to our terms and conditions, which ensure a fair and secure process for both buyers and sellers.</p>
+        </div>
+    </section>
+
+    <!-- Property Listings -->
+    <main class="property-listings">
         <!-- Listing 1 -->
-        <main class="property-listings">    
         <div class="property-card">
             <img src="House0.jpeg" alt="Modern Bungalow">
             <div class="property-details">
@@ -220,12 +220,17 @@
                 </div>
             </div>
         </div>
-        </main>  
+
+        <!-- Add 8 more listings following the same structure -->
+        <!-- Listing 3-10 (Sample images: house2.jpg to house5.jpg, land2.jpg to land5.jpg) -->
+        <!-- Duplicate the above property-card div structure and modify details -->
+        
+    </main>
 
     <!-- Contact Section -->
-    <section class="contact-section">
-        <h2>📩 Property Inquiry Form</h2>
-        <form id="inquiryForm">
+    <section id="contact" class="contact-section">
+        <h2>📩 Contact Us</h2>
+        <form id="contactForm">
             <input type="text" placeholder="Full Name" required>
             <input type="email" placeholder="Email Address" required>
             <input type="tel" placeholder="Phone Number" required>
@@ -236,7 +241,7 @@
                 <!-- Add other properties -->
             </select>
             <textarea placeholder="Your Message" rows="4" required></textarea>
-            <button type="submit">Submit Inquiry</button>
+            <button type="submit">Send Message</button>
         </form>
     </section>
 
