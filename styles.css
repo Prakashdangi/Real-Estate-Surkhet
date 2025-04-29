@@ -1,3 +1,106 @@
+:root {
+    --brand-blue: #F0F8FF;
+    --accent-blue: #87CEEB;
+    --text-dark: #2F4F4F;
+}
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    background: #F8F9FA;
+}
+
+/* Header Styles */
+header {
+    background: var(--brand-blue);
+    border-bottom: 2.5px solid var(--accent-blue);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--accent-blue);
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+nav ul {
+    display: flex;
+    gap: 2.5rem;
+    list-style: none;
+}
+
+nav a {
+    color: var(--text-dark);
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--accent-blue);
+}
+
+/* Property Listings Grid */
+.property-listings {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2.5rem;
+}
+
+.property-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.property-card:hover {
+    transform: translateY(-5px);
+}
+
+.property-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-bottom: 3px solid var(--accent-blue);
+}
+
+.property-details {
+    padding: 1.5rem;
+}
+
+.property-details h3 {
+    color: var(--accent-blue);
+    margin: 0 0 1rem 0;
+    font-size: 1.4rem;
+}
+
+.owner-info {
+    background: var(--brand-blue);
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 1.5rem;
+    border-left: 3px solid var(--accent-blue);
+}
+
+/* Contact Section */
 .contact-section {
     max-width: 800px;
     margin: 4rem auto;
@@ -18,10 +121,11 @@ form {
     gap: 1.5rem;
 }
 
-form input, form textarea {
+form input, form select, form textarea {
     padding: 0.8rem;
     border: 2px solid var(--brand-blue);
     border-radius: 6px;
+    font-size: 1rem;
 }
 
 button[type="submit"] {
